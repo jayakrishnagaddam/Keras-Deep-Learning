@@ -4,10 +4,8 @@ from keras import models
 import numpy as np
 from keras import layers
 
-# Load the dataset with a limit of the top 2,000 most frequent words
 (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=15000)
 
-# Set the dimensions to 2000
 dimensions = 15000
 
 def preprocess(sequences, dimensions):
